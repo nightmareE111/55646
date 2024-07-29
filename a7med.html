@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1em;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2em;
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-details {
+            flex: 1;
+            margin-left: 2em;
+        }
+        .product-details h1 {
+            margin-top: 0;
+        }
+        .price {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 1em 0;
+        }
+        .buy-now {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            text-transform: uppercase;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .buy-now:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sale on Shirts!</h1>
+    </header>
+    <div class="container">
+        <div class="product">
+            <img src="data:image/jpeg;base64,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" alt="Shirt Image">
+            <div class="product-details">
+                <h1>Stylish Shirt</h1>
+                <p>احمد لبيع التشرتات
+                </p>
+                <p class="price">$0.00 only for you
+                </p>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
